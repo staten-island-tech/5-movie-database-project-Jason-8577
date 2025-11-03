@@ -39,13 +39,8 @@ movies = [
     "thumbnail_height": 245
   },
 ]
-year = movies['year']
 Titles = movies
 while movies:
     if Titles == movies:
         for index, item in enumerate(movies):
             print(index, ":", item["title"])
-        break
-    while movies:
-        if year == movies['year']:
-            print[movies, year]
