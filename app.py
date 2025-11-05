@@ -7,7 +7,27 @@ data = json.load(movies)
 """ for index, item in enumerate(data):
     print(index, ":", item["title"]) """
 
-year = int(input("Input the year."))
-while True:
-    if year >= 2000:
-        print(data['title'])
+
+""" given_year = int(input("input the year."))
+for movies in data:
+    if movies['year'] > given_year:
+        print(movies['title'], movies['year']) """
+
+
+""" given_year = int(input("Input the smaller year."))
+set_year = int(input("Input the larger year."))
+for movies in data:
+    if movies['year'] > given_year and movies['year'] < set_year:
+        print(movies['title'], movies['year']) """
+
+
+""" given_year = int(input("Input the year."))
+for movies in data:
+    if movies['year'] == given_year:
+        print(movies['title'], movies['year']) """
+
+
+Search = input("Enter movie name.")
+def movie(x):
+    if Search == movies['title']:
+        print(movies['title'])
