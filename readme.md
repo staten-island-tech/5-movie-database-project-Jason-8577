@@ -17,4 +17,4 @@ Develop a function that allows users to search for a specific movie and returns 
 
 ## File 6
 
-Develop a function that allows users to search for movies by genre
+Develop a function that allows users to search for movies by genreh
