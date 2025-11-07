@@ -27,11 +27,14 @@ for movies in data:
         print(movies['title'], movies['year']) """
 
 
-Search = input("Enter movie name.")
-Search == Search.lower()
-def movie_search(x, y):
-    found = movie_search
-    if found:
-        print(movies['title'])
-    else:
-        print("Title not found")
+
+def movie_search():
+    Search = input("Enter movie name.")
+    Search == Search.lower()
+    found = 0
+    for x in data:
+        if Search.lower() in x['title'].lower():
+            print(f"{x["title"].lower()}")
+            a += 1
+    if found == 0:
+        print("The movie was not found")
