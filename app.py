@@ -27,10 +27,9 @@ for movies in data:
         print(movies['title'], movies['year']) """
 
 
-
+Search = input("Enter movie name.")
+Search == Search.lower()
 def movie_search():
-    Search = input("Enter movie name.")
-    Search == Search.lower()
     found = 0
     for x in data:
         if Search.lower() in x['title'].lower():
