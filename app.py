@@ -28,8 +28,9 @@ for movies in data:
 
 
 Search = input("Enter movie name.")
+Search == Search.lower()
 def movie_search(x, y):
-found = movie_search
+    found = movie_search
     if found:
         print(movies['title'])
     else:
