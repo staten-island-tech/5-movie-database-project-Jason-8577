@@ -36,7 +36,7 @@ def Movie_Search():
         else:
             print("No movies were found") """
 
-print(movies['genres'])
+
 user_input = input("Input a genre.")
 user_input = user_input.lower()
 for movies in data:
