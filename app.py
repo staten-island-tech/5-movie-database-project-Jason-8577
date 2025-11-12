@@ -36,11 +36,12 @@ def movie():
         else:
             print("No movies were found.") """
 
-genre = input("Input the genre.")
+
 def Search(genre):
+    genre = input("Input the genre.")
     genre == genre.lower()
-    for movies in data:
-        if genre in movies['genres']:
-            print(movies['title'], movies['genres'])
-        else: 
-            print("Genre not found")
+for movies in data:
+    if genre in movies['genres']:
+        print(movies['title'], movies['genres'])
+    else: 
+        print("Genre not found")
