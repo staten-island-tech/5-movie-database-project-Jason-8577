@@ -29,16 +29,18 @@ for movies in data:
 
 """ Search = input("Enter movie name.")
 Search = Search.lower()
-def Movie_Search():
-    for movies in data:
+def movie():
+    for movie in movies:
         if Search.lower() in movies['title'].lower():
-            print(f"{movies['title'].lower()}")
+            print(f"{movies['title'].lower(), movies['year']}")
         else:
-            print("No movies were found") """
+            print("No movies were found.") """
 
-
-user_input = input("Input a genre.")
-user_input = user_input.lower()
-for movies in data:
-    if user_input.lower() or user_input == movies['genres']:
-        print(movies['title'], movies['genres'], movies['year'])
+genre = input("Input the genre.")
+def Search(genre):
+    genre == genre.lower()
+    for movies in data:
+        if genre in movies['genres']:
+            print(movies['title'], movies['genres'])
+        else: 
+            print("Genre not found")
