@@ -43,7 +43,7 @@ def search(movies, genre):
     genre = genre.lower()
     results = []
     for movies in data:
-        if genre in movies['genres']:
+        if genre in movies["genres"].lower():
             results.append(movies['genres'])
     return results
 input = "Drama"
