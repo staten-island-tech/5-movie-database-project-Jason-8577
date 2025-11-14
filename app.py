@@ -1,4 +1,5 @@
 import json
+from re import search
 ## Open the JSON file of movie data
 movies = open("./movies.json", encoding="utf8")
 ## create variable "data" that represents the enitre movie list
@@ -27,21 +28,24 @@ for movies in data:
         print(movies['title'], movies['year']) """
 
 
-""" Search = input("Enter movie name.")
-Search = Search.lower()
-def movie():
-    for movie in movies:
-        if Search.lower() in movies['title'].lower():
-            print(f"{movies['title'].lower(), movies['year']}")
-        else:
-            print("No movies were found.") """
+""" def search_movies(movies, search):
+    search = search.lower()
+    results = []
+    for movies in data:
+        if search in movies["title"].lower():
+            results.append(movies['title'])
+    return results
+input = "the"
+results = search_movies(movies, input)
+print(results) """
 
-
-def Search(genre):
-    genre = input("Input the genre.")
-    genre == genre.lower()
-for movies in data:
-    if genre in movies['genres']:
-        print(movies['title'], movies['genres'])
-    else: 
-        print("Genre not found")
+def search(movies, genre):
+    genre = genre.lower()
+    results = []
+    for movies in data:
+        if genre in movies['genres']:
+            results.append(movies['genres'])
+    return results
+input = "Drama"
+results = search(movies, input)
+print(results)
