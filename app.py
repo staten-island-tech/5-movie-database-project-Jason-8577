@@ -47,5 +47,5 @@ def search(movies, genre):
             results.append(movies['genres'])
     return results
 input = "Drama"
-results = search(movies, input)
+results = search(input)
 print(results)
