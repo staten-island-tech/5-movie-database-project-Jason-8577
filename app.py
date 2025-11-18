@@ -35,8 +35,8 @@ for movies in data:
         if search in movies["title"].lower():
             results.append(movies['title'])
     return results
-input = "the"
-results = search_movies(movies, input)
+Search = input("What movie would you like to watch?")
+results = search_movies(movies, Search)
 print(results) """
 
 
@@ -47,6 +47,6 @@ def search(movies, genre):
         if genre in movies["genres"].lower():
             results.append(movies['genres'])
     return results
-input = "Drama"
-results = search(movies, input)
+Search = input("What movie genre would you like to view?")
+results = search(movies, Search)
 print(results)
