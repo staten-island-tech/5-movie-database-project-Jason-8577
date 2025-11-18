@@ -39,6 +39,7 @@ input = "the"
 results = search_movies(movies, input)
 print(results) """
 
+
 def search(movies, genre):
     genre = genre.lower()
     results = []
@@ -47,5 +48,5 @@ def search(movies, genre):
             results.append(movies['genres'])
     return results
 input = "Drama"
-results = search(input)
+results = search(movies, input)
 print(results)
