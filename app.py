@@ -40,7 +40,7 @@ results = search_movies(movies, Search)
 print(results) """
 
 
-def search(movies, genre):
+""" def search(movies, genre):
     genre = genre.lower()
     results = []
     for movies in data:
@@ -49,4 +49,4 @@ def search(movies, genre):
     return results
 Search = input("What movie genre would you like to view?")
 results = search(movies, Search)
-print(results)
+print(results) """
